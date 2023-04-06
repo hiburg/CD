@@ -31,4 +31,5 @@ jobs:
           key: ${{ secrets.KEY }}
           script: |
               cd /home/CD_assignment
-              whoami
+              git pull origin main
+              systemctl restart nginx
