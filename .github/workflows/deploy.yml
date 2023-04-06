@@ -31,5 +31,5 @@ jobs:
           key: ${{ secrets.KEY }}
           script: |
               cd /home/CD_assignment
-              git pull origin main
+              git clone http://github.com/hiburg/CD
               systemctl restart nginx
